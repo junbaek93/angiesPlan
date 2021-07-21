@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+/*=====================================================================
+                            Main Page
+=====================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: none;
+          box-sizing: none;
+  font-family: 'Varela Round', sans-serif;
+  color: #678888;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#2eeaa8), color-stop(#29dbb7), color-stop(#20cbc0), color-stop(#19bacc), color-stop(#10abda), color-stop(#0a9de6), to(#028af2));
+  background: linear-gradient(90deg, #2eeaa8, #29dbb7, #20cbc0, #19bacc, #10abda, #0a9de6, #028af2);
+}
+
+.main-section {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-page-wrapper {
+  display: inline-block;
+  background-color: white;
+  width: 50%;
+  min-height: 498px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 7px 7px #9db4f5;
+          box-shadow: 7px 7px #9db4f5;
+}
+
+.welcome-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 60%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome-page .welcome-info {
+  width: 70%;
+  padding: 50px;
+}
+
+.split {
+  height: 100%;
+  min-width: 2px;
+  background: 7px 7px #9db4f5;
+}
+
+.login {
+  display: inline-block;
+  width: 160px;
+  min-height: 160px;
+  padding: 20px 20px 20px 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login .signIn {
+  margin-bottom: 10px;
+}
+
+.login .signIn, .login .signUp {
+  background: #9db4f5;
+  width: 160px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login h4 {
+  white-space: nowrap;
+  margin: 0 0 20px auto;
+}
+
+/*=====================================================================
+                            Sign up section
+=====================================================================*/
+.signUpSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.signUpSection p {
+  width: 70%;
+  padding: 20px 0 10px 0;
+}
+
+.signUpSection form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.signUpSection form .insertName {
+  margin-right: 40px;
+}
+
+.signUpSection form .insertName, .signUpSection form .emailDOB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signUpSection .sign-up-form {
+  margin-top: 30px;
+  background: #9db4f5;
+  width: 160px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

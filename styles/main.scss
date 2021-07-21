@@ -1,0 +1,106 @@
+@import './variables';
+@import './section';
+@import './mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*=====================================================================
+                            Main Page
+=====================================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: 'Varela Round', sans-serif;
+    color: $textColor;
+}
+
+body{
+    background: $backgroundColor;
+}
+
+.main-section{
+    @include sectionStyle();
+}
+
+.main-page-wrapper{
+    @include pageWrapperStyle();
+    @include flexAlignMid();
+    box-shadow: $blueBoxShadow;
+}
+
+.welcome-page{
+    @include flexAlignMid();
+    height: 100%;
+    width: 60%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    .welcome-info{
+        width: 70%;
+        padding: 50px;
+    }
+}
+
+.split{
+    @include lineSplit();
+    background: $blueBoxShadow;
+}
+
+.login{
+    display: inline-block;
+    width: 160px;
+    min-height: 160px;
+    padding: 20px 20px 20px 75px;
+    @include flexAlignMid();
+    flex-direction: column;
+    .signIn{
+        margin-bottom: 10px;
+    }
+    .signIn, .signUp{
+        @include defaultBtn();
+        @include flexAlignMid();
+    }
+    h4{
+        white-space: nowrap;
+        margin: 0 0 20px auto;
+    }
+}
+
+/*=====================================================================
+                            Sign up section
+=====================================================================*/
+
+.signUpSection{
+    @include flexAlignMid();
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    p{
+        width: 70%;
+        padding: 20px 0 10px 0;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .insertName{
+            margin-right: 40px;
+        }
+
+        .insertName, .emailDOB{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    .sign-up-form{
+        margin-top: 30px;
+        @include defaultBtn();
+        @include flexAlignMid();
+    }
+}
