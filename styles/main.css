@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 /*=====================================================================
-                            Main Page
+                            Login Page
 =====================================================================*/
 * {
   margin: 0;
@@ -151,13 +151,13 @@ body {
           flex-direction: column;
   height: 100%;
   width: 60%;
-  margin: 0 auto;
+  margin-top: 30px;
   padding-bottom: 50px;
 }
 
 .signUpSection p {
   width: 70%;
-  padding: 20px 0 10px 0;
+  padding: 40px 0 10px 0;
 }
 
 .signUpSection form {
@@ -171,7 +171,7 @@ body {
   margin-right: 40px;
 }
 
-.signUpSection form .insertName, .signUpSection form .emailDOB {
+.signUpSection form .insertName, .signUpSection form .passwordDOB {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,5 +203,329 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/*=====================================================================
+                            Main Page
+=====================================================================*/
+.main-page-container {
+  display: inline-block;
+  background-color: white;
+  width: 50%;
+  min-height: 498px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 7px 7px #9db4f5;
+          box-shadow: 7px 7px #9db4f5;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.main-page-container .nav-side {
+  background: #d8daf5;
+  width: 90px;
+  min-height: 498px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+}
+
+.main-page-container .nav-side ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  margin-top: 50px;
+  padding: 0 10px 0 10px;
+}
+
+.main-page-container ul, .main-page-container ul li a {
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main-page-container ul:hover, .main-page-container ul li a:hover {
+  color: #FFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/*=====================================================================
+                            progress section
+=====================================================================*/
+.progress-section {
+  display: inline-block;
+  width: 870px;
+  min-height: 498px;
+}
+
+.progress-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [first] 694px [second] 175px;
+      grid-template-columns: [first] 694px [second] 175px;
+  -ms-grid-rows: [first] 320px [second] 179px;
+      grid-template-rows: [first] 320px [second] 179px;
+}
+
+.progress-graph {
+  display: inline-block;
+  background-color: rgba(17, 167, 226, 0.329);
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 660px;
+  height: 300px;
+  text-align: center;
+}
+
+.account-info {
+  display: inline-block;
+  background-color: rgba(17, 167, 226, 0.329);
+  margin-top: 20px;
+  border-radius: 15px;
+  width: 160px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-info .profile-image {
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.account-info > p {
+  margin: 10px;
+}
+
+.track {
+  display: inline-block;
+  background-color: rgba(17, 167, 226, 0.329);
+  margin: 24px auto;
+  border-radius: 15px;
+  width: 660px;
+  height: 125px;
+}
+
+.track > h1 {
+  text-align: center;
+}
+
+.track .input-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.track .weightbodyfat-box, .track .caloriesMood-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.track .weightbodyfat-box > input, .track .caloriesMood-box > input {
+  border: 0;
+  border-radius: 12px;
+}
+
+.track .caloriesMood-box {
+  margin: 0 0 0 20px;
+}
+
+.track .input-track > .track-btn {
+  background: #9db4f5;
+  width: 160px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 0 0 40px;
+  padding: 15px;
+}
+
+/*=====================================================================
+                            Plan section
+=====================================================================*/
+.plan-section {
+  display: none;
+  width: 870px;
+  min-height: 498px;
+}
+
+.plan-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.update-plan {
+  margin: 20px;
+  border-radius: 15px;
+  width: 95%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.change-plan {
+  background: rgba(17, 167, 226, 0.329);
+  margin: 10px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.change-plan > h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.plan-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan-columns > p {
+  font-size: 100px;
+}
+
+/*=====================================================================
+                            Workout section
+=====================================================================*/
+.workout-section {
+  display: none;
+  width: 870px;
+  min-height: 498px;
+}
+
+.workout-wrapper {
+  width: 870px;
+  min-height: 498px;
+}
+
+.workout-plan {
+  text-align: center;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.workout-plan .workout1 > h1, .workout-plan .workout2 > h1 {
+  margin: 50px 0 50px 0;
+}
+
+/*=====================================================================
+                            Recipes section
+=====================================================================*/
+.recipes-section {
+  display: none;
+  width: 870px;
+  min-height: 498px;
+}
+
+/*=====================================================================
+                            Social section
+=====================================================================*/
+.social-section {
+  display: none;
+  width: 870px;
+  min-height: 498px;
+}
+
+/*=====================================================================
+                            Support section
+=====================================================================*/
+.support-section {
+  display: none;
+  width: 870px;
+  min-height: 498px;
 }
 /*# sourceMappingURL=main.css.map */

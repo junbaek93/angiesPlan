@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 /*=====================================================================
-                            Main Page
+                            Login Page
 =====================================================================*/
 
 *{
@@ -76,11 +76,11 @@ body{
     flex-direction: column;
     height: 100%;
     width: 60%;
-    margin: 0 auto;
+    margin-top: 30px;
     padding-bottom: 50px;
     p{
         width: 70%;
-        padding: 20px 0 10px 0;
+        padding: 40px 0 10px 0;
     }
 
     form{
@@ -91,7 +91,7 @@ body{
             margin-right: 40px;
         }
 
-        .insertName, .emailDOB{
+        .insertName, .passwordDOB{
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -103,4 +103,243 @@ body{
         @include defaultBtn();
         @include flexAlignMid();
     }
+}
+
+/*=====================================================================
+                            Main Page
+=====================================================================*/
+
+.main-page-container{
+    @include pageWrapperStyle();
+    @include flexAlignMid();
+    box-shadow: $blueBoxShadow;
+    justify-content: flex-start;
+    align-content: space-between;
+
+    .nav-side{
+        background: $tabcolor;
+        width: 90px;
+        min-height: 498px;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+    }
+
+    .nav-side ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 400px;
+        margin-top: 50px;
+        padding: 0 10px 0 10px;
+    }
+
+    
+
+    ul, ul li a{
+        @include list();
+        transition: 0.5s;
+
+        &:hover{
+            color: #FFF;
+            transition: 0.5s;
+        }
+    }
+}
+
+/*=====================================================================
+                            progress section
+=====================================================================*/
+
+.progress-section{
+    display: inline-block;
+    @include contentSection();
+}
+
+.progress-wrapper{
+    display: grid;
+    grid-template-columns: [first] 694px [second] 175px ;
+    grid-template-rows: [first] 320px [second] 179px;
+}
+
+
+.progress-graph{
+    display: inline-block;
+    background-color: $backdropColor;
+    margin: 20px auto;
+    border-radius: 15px;
+    width: 660px;
+    height: 300px;
+    text-align: center;
+}
+
+.account-info{
+    display: inline-block;
+    background-color: $backdropColor;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 160px;
+    height: 450px;
+    @include flexColumnMid;
+
+    .profile-image{
+        background-color: gray;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    > p{
+        margin: 10px;
+    }
+}
+
+.track{
+    display: inline-block;
+    background-color: $backdropColor;
+    margin: 24px auto;
+    border-radius: 15px;
+    width: 660px;
+    height: 125px;
+    
+    > h1{
+        text-align: center;
+    }
+
+    .input-track{
+        display: flex;
+        @include flexAlignMid();
+    }
+
+    .weightbodyfat-box, .caloriesMood-box{
+        display: flex;
+        flex-direction: column;
+
+        > input{
+            border: 0;
+            border-radius: 12px;
+        }
+    }
+
+    .caloriesMood-box{
+        margin: 0 0 0 20px;
+    }
+
+    .input-track > .track-btn{
+        @include bigBtn();
+        @include flexAlignMid();
+        margin: 10px 0 0 40px;
+        padding: 15px;
+    }
+}
+
+/*=====================================================================
+                            Plan section
+=====================================================================*/
+
+.plan-section{
+    display: none;
+    @include contentSection();
+    
+}
+
+.plan-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.update-plan{
+    margin: 20px;
+    border-radius: 15px;
+    width: 95%;
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.change-plan{
+    background: $backdropColor;
+    margin: 10px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    height: 150px;
+    display: flex;
+
+    > h1{
+        display: flex;
+    }
+}
+
+.plan-columns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > p{
+        font-size: 100px;
+    }
+}
+
+/*=====================================================================
+                            Workout section
+=====================================================================*/
+
+.workout-section{
+    display: none;
+    @include contentSection();
+    
+}
+
+.workout-wrapper{
+    @include contentSection();
+
+}
+
+.workout-plan{
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .workout1 > h1, .workout2 > h1{
+        margin: 50px 0 50px 0;
+    }
+}
+
+
+
+/*=====================================================================
+                            Recipes section
+=====================================================================*/
+
+.recipes-section{
+    display: none;
+    @include contentSection();
+    
+}
+
+/*=====================================================================
+                            Social section
+=====================================================================*/
+
+.social-section{
+    display: none;
+    @include contentSection();
+    
+}
+
+/*=====================================================================
+                            Support section
+=====================================================================*/
+
+.support-section{
+    display: none;
+    @include contentSection();
+    
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Angie's Diet Tracker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./js/__main.js"></script>
+    </head>
+    <body>
+        <script>userAccountLoginInfo()</script>
+        <section class="main-section">
+            <div class="main-page-container">
+                <aside class="nav-side">
+                    <ul class="nav-links">
+                        <li><a href="#" onclick="toggle(0)">Progress</a></li>
+                        <li><a href="#" onclick="toggle(1)">Plan</a> </li>
+                        <li><a href="#" onclick="toggle(2)">Workout</a></li>
+                        <li><a href="#" onclick="toggle(3)">Recipes</a></li>
+                        <li><a href="#" onclick="toggle(4)">Social</a></li>
+                        <li><a href="#" onclick="toggle(5)">Support</a></li>
+                    </ul>
+                </aside>
+                    <section class="progress-section">
+                        <div class="progress-wrapper">
+                            <div class="progress-graph">
+                                <div>
+                                    <canvas id="myChart" width="660px" height="300px"></canvas>
+                                    <script>accountCharts()</script>
+                                  </div>
+                            </div>
+                            <div class="account-info">
+                                <div class="profile-image"></div>
+                                <h2 class="Name"></h2>
+                                <h1 class="age">Age: 28</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia ipsa eius dolore corporis quisquam sapiente.</p>
+                            </div>
+                            <div class="track">
+                                <h1>Track Your Progress!</h1>
+                                <div class="input-track">
+                                    <div class="weightbodyfat-box">
+                                        <label>Weight:</label>
+                                        <input type="number">
+                                        <label>Body Fat:</label>
+                                        <input type="number">
+                                    </div>
+                                    
+                                    <div class="caloriesMood-box">
+                                        <label>Calories:</label>
+                                        <input type="number">
+                                        <label>Mood:</label>
+                                        <input list = "mood">
+                                            <datalist id = "mood">
+                                            <option value="Extremely Happy"></option>
+                                            <option value="Happy"></option>
+                                            <option value="Content"></option>
+                                            <option value="Meh"></option>
+                                            <option value="Sad"></option>
+                                        </datalist>
+                                    </div>
+                                    
+                                    <a href="#" class="track-btn">Track my Progress!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="plan-section">
+                        <div class="plan-wrapper">
+                            <div class="update-plan">
+                                <div class="plan-columns">
+                                    <h1>Your Goal: </h1>
+                                    <p class="plan-stats">135</p>
+                                </div>
+                                <div class="plan-columns">
+                                    <h1>Your Current Progress: </h1>
+                                    <p class="plan-stats">123</p>
+                                </div>
+                                <div class="plan-columns">
+                                    <h1>You Need to lose: </h1>
+                                    <p class="plan-stats">12</p>
+                                </div>
+                                <script>planUpdater()</script>
+                            </div>
+                            <div class="change-plan">
+                                <h1>Your Current Plan: </h1>
+                            </div>
+                            
+                        </div>
+                        
+                    </section>
+                    <section class="workout-section">
+                        <div class="workout-wrapper">
+                            <div class="workout-plan">
+                                <div class="workout1">
+                                    <h1>Workout Strength Option:</h1>
+                                    <!--<iframe width="400" height="340" src="https://www.youtube.com/embed/Auo8veVyRIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                                </div>
+                                <div class="workout2">
+                                    <h1>Workout Low Cardio Option:</h1>
+                                    <!--<iframe width="400" height="340" src="https://www.youtube.com/embed/gC_L9qAHVJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="recipes-section">
+                        <h1>Recipes</h1>
+                    </section>
+                    <section class="social-section">
+                        <h1>Social</h1>
+                    </section>
+                    <section class="support-section">
+                        <div class="support-wrapper">
+                            <h1>Contact Us!</h1>
+                            <div class="support-ui">
+
+                            </div>
+                        </div>
+                        
+                    </section>
+            </div>
+        </section>
+        <script src="./js/__toggleMenu.js"></script>
+    </body>
+</html>

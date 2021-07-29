@@ -18,3 +18,10 @@ Color scheme:
                         $carolina-blue: hsla(200, 92%, 47%, 1);
                         $bleu-de-france: hsla(206, 98%, 48%, 1);
 
+
+progress
+plan
+workouts
+social
+Recipes
+support

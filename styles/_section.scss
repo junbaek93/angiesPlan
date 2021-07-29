@@ -15,3 +15,8 @@
     outline: none;
     border-radius: 40px;
 }
+
+@mixin contentSection {
+    width: 870px;
+    min-height: 498px;
+}

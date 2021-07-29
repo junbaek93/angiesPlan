@@ -1,0 +1,5 @@
+{"accountInformation":[
+    {   "firstName":"John", "lastName":"Doe", "accountUsername": "johndoe", "accountPassword": "johndoe1" ,"joinDate": "10/09/2020", "goal": "180","weighthistory": ["202", "202", "200", "201", "199", "199", "197", "195", "194", "193"]},
+    {   "firstName":"Anna", "lastName":"Smith", "accountUsername": "anasmith", "accountPassword": "anasmith2" ,"joinDate": "05/02/2021", "goal": "135","weighthistory": ["146", "145", "144"]},
+    {   "firstName":"Peter", "lastName":"Jones",  "accountUsername": "peterjones", "accountPassword": "peterjones3" , "joinDate": "01/02/2021", "goal": "130","weighthistory": ["150", "148", "147", "142", "142", "140", "138"]}
+]}

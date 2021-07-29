@@ -6,7 +6,7 @@
         <title>Angie's Diet Tracker</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
         <section class="main-section">
@@ -22,12 +22,13 @@
                     <h4>Log in to Your Account</h4>
                     <form>
                         <label>Username: </label><br>
-                        <input type="text" name="" id=""><br><br>
+                        <input type="text" name="nameInput" id="userName"><br><br>
                         <label>Password: </label><br>
-                        <input type="text" name="" id=""><br><br>
-                    </form>
-                    <a href="#" class="signIn">Sign in!</a>
-                    <a href="./signup.html" class="signUp">Sign up!</a>
+                        <input type="password" name="PWInput" id="PassWord"><br><br>
+                        <a href="#" class="signIn" onclick= "loginInfo()">Sign In!</a>
+                    </form>                 
+                    <a href="./signup.html" class="signUp">Sign Up!</a>
+                    <script src="./js/__main.js"></script>
                 </div>
             </div>
         </div>
